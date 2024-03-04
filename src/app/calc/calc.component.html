@@ -1,3 +1,10 @@
-{{num1}}
-{{num2}}
+<input type="number" [(ngModel)]="num1" name="number1">
+<input type="number" [(ngModel)]="num2" name="number2">
+
+<button (click)="add()">SUM</button>
+<button (click)="sub()">SUBTRACT</button>
+<button (click)="div()">DIVIDE</button>
+<button (click)="mul()">MULTIPLY</button>
+<button (click)="per()">PERCENTAGE</button>
+<button (click)="pot()">POTENTIATION</button>
 {{total}}

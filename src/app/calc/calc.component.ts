@@ -32,7 +32,7 @@ export class CalcComponent {
   }
 
   pot(){
-    Math.pow(this.num1, this.num2);
+   this.total = Math.pow(this.num1, this.num2);
   }
 }
 
