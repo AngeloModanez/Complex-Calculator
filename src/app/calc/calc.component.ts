@@ -11,5 +11,7 @@ export class CalcComponent {
   num2: number = 0;
   total: number = 0;
 
-  
+  add(){
+    this.total = this.num1 + this.num2;
+  }
 }
