@@ -22,5 +22,9 @@ export class CalcComponent {
   div(){
     this.total = this.num1 / this.num2;
   }
-  
+
+  mul(){
+    this.total = this.num1 * this.num2;
+  }
 }
+
