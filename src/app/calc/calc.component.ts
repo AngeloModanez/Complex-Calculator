@@ -14,4 +14,8 @@ export class CalcComponent {
   add(){
     this.total = this.num1 + this.num2;
   }
+
+  sub(){
+    this.total = this.num1 - this.num2;
+  }
 }
