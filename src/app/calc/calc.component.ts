@@ -30,5 +30,9 @@ export class CalcComponent {
   per(){
     this.total = (this.num1 / this.num2) * 100;
   }
+
+  pot(){
+    Math.pow(this.num1, this.num2);
+  }
 }
 
