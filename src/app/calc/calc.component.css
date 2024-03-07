@@ -1,0 +1,26 @@
+button {
+  width: 28%;
+  height: 50px;
+  margin: 1.5%;
+}
+
+.card {
+  padding: 1%;
+  margin: 1.5%;
+  margin-top: 3%;
+}
+
+::placeholder {
+  color: white;
+}
+
+input {
+  color: white;
+  background-color: #455952;
+  border-color: black;
+  border-width: 5px;
+  margin: 1.5%;
+  margin-top: 3%;
+  padding: 1%;
+  width: 97%;
+}

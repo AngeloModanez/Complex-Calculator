@@ -1,10 +1,59 @@
-<input type="number" [(ngModel)]="num1" name="number1">
-<input type="number" [(ngModel)]="num2" name="number2">
-
-<button (click)="add()">SUM</button>
-<button (click)="sub()">SUBTRACT</button>
-<button (click)="div()">DIVIDE</button>
-<button (click)="mul()">MULTIPLY</button>
-<button (click)="per()">PERCENTAGE</button>
-<button (click)="pot()">POTENTIATION</button>
-{{total}}
+<div
+  style="
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(160, 222, 215);
+  "
+>
+  <div class="container-fluid text-center">
+    <div
+      style="width: 40%; height: 70%; background-color: #bdbebf"
+      class="card"
+    >
+      <div class="calculator">
+        <div class="display">
+          <div style="background-color: #838587" class="card">
+            <input
+              type="number"
+              [(ngModel)]="num1"
+              name="number1"
+              placeholder="First Number"
+            />
+            <input
+              type="number"
+              [(ngModel)]="num2"
+              name="number2"
+              placeholder="Second Number"
+            />
+            <h3 style="color: #ffffff">Total = {{ total }}</h3>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn-dark" (click)="add()">+</button>
+          <button class="btn btn-dark" (click)="sub()">-</button>
+          <button class="btn btn-dark" (click)="div()">/</button>
+        </div>
+        <div>
+          <button class="btn btn-dark" (click)="mul()">*</button>
+          <button class="btn btn-dark" (click)="per()">%</button>
+          <button class="btn btn-dark" (click)="pot()">^</button>
+        </div>
+        <div>
+          <button
+            style="
+              margin-bottom: 3%;
+              width: 90%;
+              background-color: #8c3b4a;
+              color: #ffffff;
+            "
+            class="btn btn"
+            (click)="getRandom()"
+          >
+            TRY
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
