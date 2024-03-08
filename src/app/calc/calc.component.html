@@ -3,17 +3,17 @@
     display: flex;
     align-items: center;
     height: 100vh;
-    background-color: rgb(160, 222, 215);
+    background-color: rgb(217, 250, 215);
   "
 >
   <div class="container-fluid text-center">
     <div
-      style="width: 40%; height: 70%; background-color: #bdbebf"
+      style="width: 40%; height: 70%; background-color: #67696b"
       class="card"
     >
       <div class="calculator">
         <div class="display">
-          <div style="background-color: #838587" class="card">
+          <div style="background-color: #315748" class="card">
             <input
               type="number"
               [(ngModel)]="num1"
@@ -41,19 +41,28 @@
         </div>
         <div>
           <button
-            style="
-              margin-bottom: 3%;
-              width: 90%;
-              background-color: #8c3b4a;
-              color: #ffffff;
-            "
-            class="btn btn"
-            (click)="getRandom()"
+            style="width: 90%"
+            class="btn btn-danger"
+            (click)="openEnd(content)"
           >
-            TRY
+            <h4>$See Your Future!$</h4>
           </button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<ng-template #content let-offcanvas>
+  <div class="offcanvas-body">
+    <h3 class="text-center mb-4 text-light">The Mystical Gnome Said:</h3>
+    <div class="card">
+      <h4 style="padding: 1rem;">{{ phrase }}</h4>
+    </div>
+    <div>
+      <button class="btn btn-danger" (click)="offcanvas.close('Close click')">
+        Bye!
+      </button>
+    </div>
+  </div>
+</ng-template>
